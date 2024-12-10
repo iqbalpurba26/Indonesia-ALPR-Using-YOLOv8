@@ -21,7 +21,7 @@ import numpy as np
 
 """## **DOWNLOAD DATASET FROM ROBOFLOW**"""
 
-rf = Roboflow(api_key="1E5IZ1OwAOeeAhHYF6HD")
+rf = Roboflow(api_key="************")
 project = rf.workspace("tes-60jyf").project("indonesian_plate_detection")
 version = project.version(2)
 dataset = version.download("yolov8")
