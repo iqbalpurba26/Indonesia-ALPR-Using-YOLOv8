@@ -1,3 +1,4 @@
+"""main.py"""
 import cv2
 from ultralytics import YOLO
 import easyocr
@@ -5,7 +6,7 @@ import easyocr
 model = YOLO('best.pt')
 reader = easyocr.Reader(['en'], gpu=True)
 
-cap = cv2.VideoCapture(1)
+cap = cv2.VideoCapture(1) # To open the external camera
 
 
 while cap.isOpened():
